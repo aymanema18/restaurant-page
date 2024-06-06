@@ -4,9 +4,11 @@ function menu() {
         const contentDiv = document.querySelector('#content');
         const menuDiv = document.createElement('div');
         
+        menuDiv.classList.add('cards-div');
+        
         btn.addEventListener('click', () => {
             contentDiv.innerHTML = '';
-            for (let i = 0; i < 5; i++) {
+            for (let i = 0; i < 10; i++) {
                 const card = document.createElement('div');
                 const name = document.createElement('p');
                 const price = document.createElement('p');

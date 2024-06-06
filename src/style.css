@@ -46,8 +46,26 @@ footer {
     align-items: center;
 }
 
+.cards-div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
 .card {
     display: flex;
     width: 500px;
     justify-content: space-between;
+}
+
+.card p {
+    margin: 10px;
+}
+
+.card:not(:first-child) {
+    border-top: 1px solid black;
+}
+
+.about-div {
+    max-width: 600px;
 }
